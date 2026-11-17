@@ -247,6 +247,10 @@ Personal memory has no fixed entry-count limit. Each entry supports **600 charac
 
 **Clear page** archives the current window and creates a blank context, retaining personal and shared group memories. Each Bot has one current private conversation; older windows are history only. **Reset King memory** clears King Arthur's personal entries and replaces its window, retaining child memories and shared group history. Removing a memory does not delete original chat messages.
 
+## v0.4.6: Marketplace reactivation fix
+
+Reinstalling or re-enabling Roundtable could leave shared-memory registrations attached to open private chats and cause activation to fail. Roundtable now removes those prompt and tool registrations on unload. Existing private chats can use shared memory after reactivation. If Harness has already reported a duplicate registration, fully quit and relaunch it.
+
 ## v0.4.5: Roundtable settings and Bot management
 
 - **Group member limit.** Set the child Bot limit on the Roundtable directory page. The settings panel stays aligned with the member area and toolbar as you drag the sidebar.
